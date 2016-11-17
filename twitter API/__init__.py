@@ -1,6 +1,7 @@
 import tweepy
 import datetime
 import csv
+import time
 
 ckey = 'rTWMi8ejikhsyyBdaRbpytVEA'
 csecret = "c180XPEpQTC9eu2k9xCRFvZgqUa2du9yKpnwae6f4GBbRbOcbs"
@@ -32,4 +33,6 @@ def start():
 
 
 if __name__ == '__main__':
-    start()
+    while True:
+        start()
+        time.sleep(60 * 60)
